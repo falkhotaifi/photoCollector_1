@@ -13,6 +13,8 @@
 		284D549D1E944B9500EBF677 /* photoCollector_1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 284D549B1E944B9500EBF677 /* photoCollector_1.xcdatamodeld */; };
 		284D549F1E944B9500EBF677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284D549E1E944B9500EBF677 /* Assets.xcassets */; };
 		284D54A21E944B9500EBF677 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284D54A01E944B9500EBF677 /* LaunchScreen.storyboard */; };
+		284D54AA1E944FD300EBF677 /* FullSizeRender.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 284D54A91E944FD300EBF677 /* FullSizeRender.jpg */; };
+		284D54AC1E9450DD00EBF677 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284D54AB1E9450DD00EBF677 /* AddPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		284D549E1E944B9500EBF677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		284D54A11E944B9500EBF677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		284D54A31E944B9500EBF677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		284D54A91E944FD300EBF677 /* FullSizeRender.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FullSizeRender.jpg; sourceTree = "<group>"; };
+		284D54AB1E9450DD00EBF677 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +62,11 @@
 			children = (
 				284D54941E944B9500EBF677 /* AppDelegate.swift */,
 				284D54961E944B9500EBF677 /* ViewController.swift */,
+				284D54AB1E9450DD00EBF677 /* AddPhotoViewController.swift */,
 				284D54981E944B9500EBF677 /* Main.storyboard */,
 				284D549E1E944B9500EBF677 /* Assets.xcassets */,
 				284D54A01E944B9500EBF677 /* LaunchScreen.storyboard */,
+				284D54A91E944FD300EBF677 /* FullSizeRender.jpg */,
 				284D54A31E944B9500EBF677 /* Info.plist */,
 				284D549B1E944B9500EBF677 /* photoCollector_1.xcdatamodeld */,
 			);
@@ -129,6 +135,7 @@
 				284D54A21E944B9500EBF677 /* LaunchScreen.storyboard in Resources */,
 				284D549F1E944B9500EBF677 /* Assets.xcassets in Resources */,
 				284D549A1E944B9500EBF677 /* Main.storyboard in Resources */,
+				284D54AA1E944FD300EBF677 /* FullSizeRender.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				284D549D1E944B9500EBF677 /* photoCollector_1.xcdatamodeld in Sources */,
+				284D54AC1E9450DD00EBF677 /* AddPhotoViewController.swift in Sources */,
 				284D54971E944B9500EBF677 /* ViewController.swift in Sources */,
 				284D54951E944B9500EBF677 /* AppDelegate.swift in Sources */,
 			);
