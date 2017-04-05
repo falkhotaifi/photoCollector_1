@@ -41,8 +41,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = UITableViewCell()
         let photo = photos[indexPath.row]
         cell.textLabel?.text = photo.title
-        cell.imageView?.image = UIImage(data: photo.image as! Data)
+        cell.imageView?.image = UIImage(data: photo.image! as Data)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let photo = photos[indexPath.row]
+        performSegue(withIdentifier: "photoSegue", sender: photo)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! AddPhotoViewController
+        nextVC.photo = sender as? Photo
     }
 
 }

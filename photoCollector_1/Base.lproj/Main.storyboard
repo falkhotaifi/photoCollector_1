@@ -39,7 +39,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="vb0-Gn-LFx"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="mNE-ds-J9u">
                             <connections>
-                                <segue destination="f2N-dw-7B3" kind="show" id="gXG-cz-JPN"/>
+                                <segue destination="f2N-dw-7B3" kind="show" identifier="photoSegue" id="gXG-cz-JPN"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -50,25 +50,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="644" y="-559"/>
-        </scene>
-        <!--Title-->
-        <scene sceneID="2Ek-gJ-UIv">
-            <objects>
-                <viewController id="Woe-c2-OP3" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3NS-Qa-aw8"/>
-                        <viewControllerLayoutGuide type="bottom" id="1gQ-cQ-jqP"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="O2P-a5-k5z">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Title" id="BRt-sc-dHG"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mnn-RR-ZdS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="644" y="159"/>
         </scene>
         <!--Add Photo View Controller-->
         <scene sceneID="SVQ-Bu-7bd">
@@ -102,10 +83,20 @@
                                     <action selector="AddButton:" destination="f2N-dw-7B3" eventType="touchUpInside" id="oWc-HY-A7D"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMY-8W-Si7">
+                                <rect key="frame" x="165.5" y="409" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="AddButton:" destination="f2N-dw-7B3" eventType="touchUpInside" id="sDI-er-SNg"/>
+                                    <action selector="DeleteButton:" destination="f2N-dw-7B3" eventType="touchUpInside" id="olr-3p-qr9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="PBF-R0-1VG" firstAttribute="centerX" secondItem="SAA-Ro-ntW" secondAttribute="centerX" id="D6o-mQ-I8O"/>
+                            <constraint firstItem="YMY-8W-Si7" firstAttribute="top" secondItem="3Vj-3Y-YTB" secondAttribute="bottom" constant="8" id="DQ4-vA-Fx6"/>
+                            <constraint firstItem="YMY-8W-Si7" firstAttribute="centerX" secondItem="SAA-Ro-ntW" secondAttribute="centerX" id="Gvr-cO-D9a"/>
                             <constraint firstItem="PBF-R0-1VG" firstAttribute="width" secondItem="b9L-Yp-DIr" secondAttribute="width" id="K0j-ff-Jtd"/>
                             <constraint firstItem="b9L-Yp-DIr" firstAttribute="top" secondItem="1DR-WD-X2e" secondAttribute="bottom" constant="30" id="b2h-8H-ddD"/>
                             <constraint firstItem="3Vj-3Y-YTB" firstAttribute="centerX" secondItem="SAA-Ro-ntW" secondAttribute="centerX" id="fDq-Xs-1AR"/>
@@ -129,13 +120,15 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="AddUpdate" destination="3Vj-3Y-YTB" id="tjN-89-CQe"/>
                         <outlet property="TextField" destination="PBF-R0-1VG" id="EbE-u3-7W1"/>
+                        <outlet property="deletebutton" destination="YMY-8W-Si7" id="XC3-8p-sX1"/>
                         <outlet property="imageViewField" destination="b9L-Yp-DIr" id="GaP-hN-p2g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4GA-i0-u4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1401" y="-559"/>
+            <point key="canvasLocation" x="1400.8" y="-559.07046476761627"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Sqv-tH-yJT">
